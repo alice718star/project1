@@ -1,6 +1,6 @@
 body{
     font-family:helvetica;
-    }
+    background-color: white;    }
 
 nav{
     position: fixed;
@@ -8,7 +8,6 @@ nav{
     left: 0px;
     bottom: 0px;
     width: 18%;
-    border: 2px white solid;
     background-color: black;
     color: white;
 }
@@ -39,22 +38,12 @@ nav img{
     box-shadow: inset 5px 5px 10px 1px rgba(0,0,0,.5);
 }
 
-div{
-    background-color: rgba(251,237,252,0.3);
-    margin-top: 0px;
-}
-
 .main, form{
     margin-left: 18%;
-    border: 1px solid black;
-}
-
-.intro{
-    border: 1px solid blue;
+    margin-top: -10px;
 }
 
 .hello{
-    border: 1px solid purple;
     text-align: center;
     font-weight: bolder;
     font-size: 30px;
@@ -64,6 +53,7 @@ div{
     padding: 10%;
     color: white;
     text-shadow: 5px 5px 10px rgba(0,0,0,.5);
+    border-radius: 30px 30px 30px 30px;
 }
 
 .hello h1{
@@ -72,16 +62,14 @@ div{
 
 .descriptions{
     font-weight: bolder;
-    font-size: 18px;
     display: flex;
-    border: 1px solid pink;
     justify-content: center;
+    padding: 8%;
 }
 
 .descriptionone, .descriptiontwo{
-    border: 1px solid magenta;
     width: 50%;
-    padding: 5%;
+    padding: 3% 3% 2% 3%;
     text-align: left;
     line-height: 2em;
     border-radius: 30px 30px 30px 30px;
@@ -98,6 +86,10 @@ div{
     color: white;
 }
 
+.skills{
+    padding: 5%;
+}
+
 .skills h2, .projects h2, .workexperience h2, .education h2, .projects h2{
     text-align: center;
     font-weight: bolder;
@@ -107,15 +99,13 @@ div{
 .skillsdescriptions{
     display: flex;
     justify-content: center;
-    border: 1px solid blue;
 }
 
 .skillsone, .skillstwo{
     width: 30%;
-    padding: 3%;
-    border: 1px solid green;
+    padding: 2%;
     line-height: 1.5em;
-    margin: 20px 10px 20px 10px;
+    margin: 30px 15px 30px 15px;
 }
 
 .skillsone{
@@ -131,13 +121,75 @@ div{
     color: white;
 }
 
+.projects{
+    padding: 5%;
+}
+
 .projectdetails{
     display: flex;
     justify-content: center;
 }
 
 .projectone, .projecttwo{
-    margin: 20px;
+    margin: 30px 15px 30px 15px;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.workexperience{
+    padding: 5%;
+    color: white;
+    background-color: black;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+        margin: 30px 100px 30px 100px;
+}
+
+.workdescription{
+    float: left;
+    width: 80%;
+}
+
+.worklinkedin{
+    text-align: left;
+}
+
+.worklinkedin:hover{
+    opacity: 0.5;
+}
+
+.education{
+    padding: 5%;
+}
+
+.educationdetails{
+    display: flex;
+}
+
+.educationone{
+    background-color: #666666;
+    color: white;
+    border-radius: 30px 30px 30px 30px;
+    padding: 2%;
+    width: 33.33%;
+    margin: 30px 15px 30px 15px;
+}
+
+.educationtwo{
+    background-color: #D3649F;
+    color: white;
+    border-radius: 30px 30px 30px 30px;
+    padding: 2%;
+    width: 33.33%;
+    margin: 30px 15px 30px 15px;
+}
+
+.educationthree{
+    background-color: white;
+    box-shadow: inset 5px 5px 10px 1px rgba(0,0,0,.5);
+    border-radius: 30px 30px 30px 30px;
+    padding: 2%;
+    width: 33.33%;
+    margin: 30px 15px 30px 15px;
 }
 
 
@@ -172,6 +224,10 @@ div{
 
 .projectdetails:hover .image {
   opacity: 0.3;
+}
+
+div{
+    background-color: rgba(251,237,252,0.3);
 }
 */
 
