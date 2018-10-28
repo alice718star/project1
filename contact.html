@@ -2,31 +2,45 @@
 <html>
     <head>
         <title>Contact Alice</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <style>
+            body{
+                font-weight: bold;
+            }
+
+        </style>
     </head>
     <body>
+        <div class="contactbackground">
+        
         <header>
             <nav>
                 <ul>
-                    <li><a href="index.html"><img src="assets/img/homepixabay.png"></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact me</a></li>
+                    <li><a href="#">Allowed Distractions</a></li>
                 </ul>
+                <img src="assets/img/profilepicflowernav.jpg">
             </nav>
         </header>
+
         <br>
         <br>
-        <h1>Contact me</h1>
+
         <form>
+                    <h1>Contact me</h1>
             <label>
-                First name <input type="text" name="fn" required>
+                First name<br> <input type="text" name="fn" required>
             </label>
             <br>
             <br>
             <label>
-                Last name <input type="text" name="ln" required>
+                Last name<br> <input type="text" name="ln" required>
             </label>
             <br>
             <br>
             <label>
-                E-mail <input type="email" name="email" required>
+                E-mail<br> <input type="email" name="email" required>
             </label>
             <br>
             <br>
@@ -37,9 +51,15 @@
                 <input type="radio" name = "referral" value="linkedin">LinkedIn<br>
                 <input type="radio" name = "referral" value="linkedin">Other <input type="text" name="other" required><br>
             </label>
+                <br>
+            <label>
+                Message<br><textarea name=”message”></textarea>
+            </label>
             <br>
             <br>
-            <input type="submit" name="submitthis" value = "Submit">
+           
+                <input type="submit" name="submitthis" value = "Submit">
         </form>
+        </div>
     </body>
 </html>

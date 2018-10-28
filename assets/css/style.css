@@ -1,6 +1,9 @@
 body{
     font-family:helvetica;
-    background-color: white;    }
+    background-image: url(../img/joanna-kosinska-669797-unsplashrev.jpg);
+    background-size: repeat;
+    background-position: right;
+}
 
 nav{
     position: fixed;
@@ -38,7 +41,7 @@ nav img{
     box-shadow: inset 5px 5px 10px 1px rgba(0,0,0,.5);
 }
 
-.main, form{
+.main{
     margin-left: 18%;
     margin-top: -10px;
 }
@@ -192,7 +195,14 @@ nav img{
     margin: 30px 15px 30px 15px;
 }
 
+form{
+    margin-left: 30%;
+}
 
+.contactbackground{
+    margin-top: -10px;
+
+}
 /*.projectdetails{
     display: flex;
 }
