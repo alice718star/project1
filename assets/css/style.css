@@ -142,8 +142,51 @@ nav img{
     margin: 30px 15px 30px 15px;
     border-radius: 30px 30px 30px 30px;
     box-shadow: inset 5px 5px 10px 1px rgba(0,0,0,.5);
-
+    position: relative;
+    width: 40%;
 }
+
+.projectone:hover .image, .projecttwo:hover .image {
+                opacity: 0.5;
+                }
+
+            .projectone:hover .middle, .projecttwo:hover .middle{
+                opacity: 1;
+                }
+
+            .projectone .text {
+                background-color: #D3649F;
+                color: white;
+                padding: 5%;
+                }
+            .projecttwo .text {
+                background-color: white;
+                color: black;
+                padding: 5%;
+                box-shadow: inset 5px 5px 10px 1px rgba(0,0,0,.5);
+                }
+
+            .image {
+                opacity: 1;
+                display: block;
+                width: 100%;
+                height: auto;
+                transition: .5s ease;
+                backface-visibility: hidden;
+                border-radius: 30px 30px 30px 30px;
+                }
+
+            .middle {
+                transition: .5s ease;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                line-height: 1.5em;
+                text-align: center;
+            }
 
 .workexperience{
     padding: 5%;
