@@ -3,46 +3,48 @@
     <head>
         <title>Contact Alice</title>
         <link rel="stylesheet" href="assets/css/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale-1, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <style>
+            body{
+                background-image: url(assets/img/joanna-kosinska-669797-unsplashrev.jpg);
+            }
+        </style>
     </head>
     <body>
-        <div class="all">
-             <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="contact.html">Contact me</a></li>
-                    <li><a href="allowed.html">Allowed Distractions</a></li>
-                <li>
-                <a href= "https://www.linkedin.com/in/alice-li-5697733"><i class="fa fa-linkedin-square" style="font-size:48px;color:#0077B5"></i></a>
-                <a href= "https://github.com/alice718star"><i class="fa fa-github" style="font-size:48px"></i></a>
-                    <img src="assets/img/profilepicflowernav.jpg"></li>
-                </ul>
-            </nav>
-
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+                <li><a href="allowed.html">Allowed Distractions</a></li>
+                <li><a href= "https://www.linkedin.com/in/alice-li-5697733"><i class="fa fa-linkedin-square" style="font-size:48px;color:#0077B5"></i></a><a href= "https://github.com/alice718star"><i class="fa fa-github" style="font-size:48px"></i></a><img src="assets/img/profilepicflowernav.jpg"></li>
+            </ul>
+        </nav>
         <form>
-                    <h1>Contact me</h1>
+            <h1>Contact me</h1>
             <label>
-                First name<br> <input type="text" name="fn" required>
+                First name*<br><input type="text" name="fn" required>
             </label>
             <br>
             <br>
             <label>
-                Last name<br> <input type="text" name="ln" required>
+                Last name*<br><input type="text" name="ln" required>
             </label>
             <br>
             <br>
             <label>
-                E-mail<br> <input type="email" name="email" required>
+                E-mail*<br><input type="email" name="email" required>
             </label>
             <br>
+            <p>*Required</p>
             <br>
             <p>How did you find me?</p>
             <label>
                 <input type="radio" name = "referral" value="friendcolleague">Friend/Colleague<br>
                 <input type="radio" name = "referral" value="internet">Internet<br>
                 <input type="radio" name = "referral" value="linkedin">LinkedIn<br>
-                <input type="radio" name = "referral" value="linkedin">Other <input type="text" name="other"><br>
+                <input type="radio" name = "referral" value="other">Other <input type="text" name="otherfield"><br>
             </label>
                 <br>
             <label>
@@ -50,9 +52,7 @@
             </label>
             <br>
             <br>
-           
                 <input type="submit" name="submitthis" value = "Submit">
         </form>
-        </div>
     </body>
 </html>

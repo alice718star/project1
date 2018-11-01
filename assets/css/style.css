@@ -1,9 +1,9 @@
 body{
-    font-family:helvetica;
-    background-image: url(../img/joanna-kosinska-669797-unsplashrev.jpg);         background-size: repeat;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../img/joanna-kosinska-669797-unsplashrevindex.jpg);
+    background-size: repeat;
     background-position: right;
 }
-
 
 nav{
     position: fixed;
@@ -11,8 +11,8 @@ nav{
     left: 0px;
     bottom: 0px;
     width: 18%;
-    background-color: black;
-    color: white;
+    background-color: #000000;
+    color: #FFFFFF;
 }
 
 nav li{
@@ -27,22 +27,18 @@ nav ul{
 }
 
 nav a{
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
-    flex-wrap: wrap;
 }
 
 nav a:hover{
     background: #48ACF0;
-    color: #F1E9DB;
 }
-
-
 
 nav img{
     width: 100%;
     box-shadow: inset 5px 5px 10px 1px rgba(0,0,0,.5);
-    border-radius: 30px 30px 30px 30px;
+    border-radius: 20px;
 }
 
 .main{
@@ -58,9 +54,9 @@ nav img{
     background-repeat: no-repeat;
     background-size: cover;
     padding: 10%;
-    color: white;
+    color: #FFFFFF;
     text-shadow: 5px 5px 10px rgba(0,0,0,.5);
-    border-radius: 30px 30px 30px 30px;
+    border-radius: 20px;
 }
 
 .hello h1{
@@ -68,7 +64,6 @@ nav img{
 }
 
 .descriptions{
-    font-weight: bolder;
     display: flex;
     justify-content: center;
     padding: 8%;
@@ -79,19 +74,18 @@ nav img{
     padding: 3% 3% 2% 3%;
     text-align: left;
     line-height: 2em;
-    border-radius: 30px 30px 30px 30px;
+    border-radius: 20px;
     margin: 30px 15px 30px 15px;
-
 }
 
 .descriptionone{
     background-color: #666666;
-    color: white;
+    color: #FFFFFF;
 }
 
 .descriptiontwo{
     background-color: #D3649F;
-    color: white;
+    color: #FFFFFF;
 }
 
 .skills{
@@ -117,16 +111,15 @@ nav img{
 }
 
 .skillsone{
-    background-color: white;
+    background-color: #FFFFFF;
     box-shadow: inset 5px 5px 10px 1px rgba(0,0,0,.5);
-    border-radius: 30px 30px 30px 30px;
+    border-radius: 20px;
 }
 
-
 .skillstwo{
-    background-color: black;
-    border-radius: 30px 30px 30px 30px;
-    color: white;
+    background-color: #000000;
+    border-radius: 20px;
+    color: #FFFFFF;
 }
 
 .projects{
@@ -140,64 +133,66 @@ nav img{
 
 .projectone, .projecttwo{
     margin: 30px 15px 30px 15px;
-    border-radius: 30px 30px 30px 30px;
+    border-radius: 20px;
     box-shadow: inset 5px 5px 10px 1px rgba(0,0,0,.5);
     position: relative;
     width: 40%;
 }
 
-.projectone:hover .image, .projecttwo:hover .image {
-                opacity: 0.5;
-                }
+.image{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    }
 
-            .projectone:hover .middle, .projecttwo:hover .middle{
-                opacity: 1;
-                }
+.middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    line-height: 1.5em;
+    text-align: center;
+    }
 
-            .projectone .text {
-                background-color: #D3649F;
-                color: white;
-                padding: 5%;
-                }
-            .projecttwo .text {
-                background-color: white;
-                color: black;
-                padding: 5%;
-                box-shadow: inset 5px 5px 10px 1px rgba(0,0,0,.5);
-                }
+.projectone .text{
+    background-color: #D3649F;
+    color: #FFFFFF;
+    padding: 5%;
+    }
 
-            .image {
-                opacity: 1;
-                display: block;
-                width: 100%;
-                height: auto;
-                transition: .5s ease;
-                backface-visibility: hidden;
-                border-radius: 30px 30px 30px 30px;
-                }
+.projecttwo .text{
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 5%;
+    box-shadow: inset 5px 5px 10px 1px rgba(0,0,0,.5);
+    }
 
-            .middle {
-                transition: .5s ease;
-                opacity: 0;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                -ms-transform: translate(-50%, -50%);
-                line-height: 1.5em;
-                text-align: center;
-            }
+.projectone:hover .image, .projecttwo:hover .image{
+    opacity: 0.5;
+    }
+
+.projectone:hover .middle, .projecttwo:hover .middle{
+    opacity: 1;
+    }
 
 .workexperience{
     padding: 5%;
-    color: white;
-    background-color: black;
+    color: #FFFFFF;
+    background-color: #000000;
     text-align: center;
-    border-radius: 30px 30px 30px 30px;
+    border-radius: 20px;
     margin: 30px 100px 30px 100px;
 }
 
 .workdescription{
+    padding-left: 5%;
     float: left;
     width: 80%;
 }
@@ -220,8 +215,8 @@ nav img{
 
 .educationone{
     background-color: #666666;
-    color: white;
-    border-radius: 30px 30px 30px 30px;
+    color: #FFFFFF;
+    border-radius: 20px;
     padding: 2%;
     width: 33.33%;
     margin: 30px 15px 30px 15px;
@@ -229,17 +224,17 @@ nav img{
 
 .educationtwo{
     background-color: #D3649F;
-    color: white;
-    border-radius: 30px 30px 30px 30px;
+    color: #FFFFFF;
+    border-radius: 20px;
     padding: 2%;
     width: 33.33%;
     margin: 30px 15px 30px 15px;
 }
 
 .educationthree{
-    background-color: white;
+    background-color: #FFFFFF;
     box-shadow: inset 5px 5px 10px 1px rgba(0,0,0,.5);
-    border-radius: 30px 30px 30px 30px;
+    border-radius: 20px;
     padding: 2%;
     width: 33.33%;
     margin: 30px 15px 30px 15px;
@@ -251,10 +246,6 @@ form{
     padding-top: 50px;
 }
 
-.contactbackground{
-    margin-top: -10px;
-}
-
 iframe{
     margin-left: 30%;
     padding-top: 10%;
@@ -264,8 +255,8 @@ iframe{
     nav{
         position: relative;
         width: 100%;
-
     }
+    
     nav img{
         width: 40%;
         max-height: 500px;
@@ -278,10 +269,10 @@ iframe{
         text-align: center;
     }
 
-
     .main{
         margin: 0px;
     }
+    
     iframe{
         margin: 0px;
         width: 100%;
@@ -292,24 +283,20 @@ iframe{
     .hello h1{
         font-size: 30px;
     }
+    
     .descriptions, .skillsdescriptions, .educationdetails{
         flex-direction: column;
-        justify-content: center;
     }
-    .descriptionone, .descriptiontwo, .skillsone, .skillstwo, .educationone, .educationtwo, .educationthree{
+    
+    .descriptionone, .descriptiontwo, .skillsone, .skillstwo, .educationone, .educationtwo, .educationthree, .workexperience{
         width: 80%;
-        justify-content: center;
         margin: 0 auto;
     }
-    .workexperience{
-        margin: 0 auto;
-        width: 80%;
         
-       text-align: left;
-    }
     .workdescription{
         float: none;
     }
+    
     .worklinkedin{
         text-align: center;
     }
