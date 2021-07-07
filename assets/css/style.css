@@ -132,6 +132,8 @@ nav img{
 }
 
 .projectdetails2{
+    display: flex;
+    justify-content: space-between;
 }
 
 .projectone, .projecttwo{
