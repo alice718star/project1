@@ -135,6 +135,14 @@ nav img{
     align-self: center;
 }
 
+.projectthree{
+    margin: 30px 15px 30px 15px;
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 10px 1px rgba(0,0,0,.5);
+    position: relative;
+    width: 100%;
+}
+
 .projectone, .projecttwo{
     margin: 30px 15px 30px 15px;
     border-radius: 20px;
