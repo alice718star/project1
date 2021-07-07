@@ -131,6 +131,11 @@ nav img{
     justify-content: center;
 }
 
+.projectdetails2{
+    display: flex;
+    justify-content: center;
+}
+
 .projectone, .projecttwo{
     margin: 30px 15px 30px 15px;
     border-radius: 20px;
